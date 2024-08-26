@@ -1,49 +1,49 @@
 function comprarvehiculo() {
-    let concesionario = prompt("¿Hola, qué vehículo busca?\n Toyota \n Ford \n Chevrolet \n Volkswagen");
+    let concesionario = prompt("¿Hola, qué vehículo busca?\n Toyota \n Ford \n Chevrolet \n Volkswagen").toLowerCase();
 
-    if (concesionario === 'Toyota') {
-        let modelo = prompt("¿Qué Toyota busca?\n Hilux \n Corolla \n Etios");
-        if (modelo === 'Hilux') {
+    if (concesionario === 'toyota') {
+        let modelo = prompt("¿Qué Toyota busca?\n Hilux \n Corolla \n Etios").toLowerCase();
+        if (modelo === 'hilux') {
             alert("¡Felicitaciones, acaba de comprar su Toyota Hilux!");
-        } else if (modelo === 'Corolla') {
+        } else if (modelo === 'corolla') {
             alert("¡Felicitaciones, acaba de comprar su Toyota Corolla!");
-        } else if (modelo === 'Etios') {
+        } else if (modelo === 'etios') {
             alert("¡Felicitaciones, acaba de comprar su Toyota Etios!");
         } else {
             alert("Ese modelo de Toyota no lo tenemos disponible");
         }
         
-    } else if (concesionario === 'Ford') {
-        let modelo = prompt("¿Qué Ford busca?\n Focus \n Fiesta \n Ranger");
-        if (modelo === 'Focus') {
+    } else if (concesionario === 'ford') {
+        let modelo = prompt("¿Qué Ford busca?\n Focus \n Fiesta \n Ranger").toLowerCase();
+        if (modelo === 'focus') {
             alert("¡Felicitaciones, acaba de comprar su Ford Focus!");
-        } else if (modelo === 'Fiesta') {
+        } else if (modelo === 'fiesta') {
             alert("¡Felicitaciones, acaba de comprar su Ford Fiesta!");
-        } else if (modelo === 'Ranger') {
+        } else if (modelo === 'ranger') {
             alert("¡Felicitaciones, acaba de comprar su Ford Ranger!");
         } else {
             alert("Ese modelo de Ford no lo tenemos disponible");
         }
 
-    } else if (concesionario === 'Chevrolet') {
-        let modelo = prompt("¿Qué Chevrolet busca?\n Corsa \n Tracker \n S10");
-        if (modelo === 'Corsa') {
+    } else if (concesionario === 'chevrolet') {
+        let modelo = prompt("¿Qué Chevrolet busca?\n Corsa \n Tracker \n S10").toLowerCase();
+        if (modelo === 'corsa') {
             alert("¡Felicitaciones, acaba de comprar su Chevrolet Corsa!");
-        } else if (modelo === 'Tracker') {
+        } else if (modelo === 'tracker') {
             alert("¡Felicitaciones, acaba de comprar su Chevrolet Tracker!");
-        } else if (modelo === 'S10') {
+        } else if (modelo === 's10') {
             alert("¡Felicitaciones, acaba de comprar su Chevrolet S10!");
         } else {
             alert("Ese modelo de Chevrolet no lo tenemos disponible");
         }
 
-    } else if (concesionario === 'Volkswagen') {
-        let modelo = prompt("¿Qué Volkswagen busca?\n Golf \n Polo \n Amarok");
-        if (modelo === 'Golf') {
+    } else if (concesionario === 'volkswagen') {
+        let modelo = prompt("¿Qué Volkswagen busca?\n Golf \n Polo \n Amarok").toLowerCase();
+        if (modelo === 'golf') {
             alert("¡Felicitaciones, acaba de comprar su Volkswagen Golf!");
-        } else if (modelo === 'Polo') {
+        } else if (modelo === 'polo') {
             alert("¡Felicitaciones, acaba de comprar su Volkswagen Polo!");
-        } else if (modelo === 'Amarok') {
+        } else if (modelo === 'amarok') {
             alert("¡Felicitaciones, acaba de comprar su Volkswagen Amarok!");
         } else {
             alert("Ese modelo de Volkswagen no lo tenemos disponible");
@@ -53,11 +53,11 @@ function comprarvehiculo() {
         alert("Ese vehículo no lo tenemos disponible");
     }
 
-    let querescomprar = confirm("Queres comprar otro vehiculo?");
-    if (querescomprar === true) {
+    let querescomprar = confirm("¿Quieres comprar otro vehículo?");
+    if (querescomprar) {
         comprarvehiculo();
     } else {
-        alert("Muchas gracias por su compra!");
+        alert("¡Muchas gracias por su compra!");
     }
 }
 
